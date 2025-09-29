@@ -7,9 +7,9 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <Link to="/">홈</Link>
-      <Link to="/boardList">전체 글</Link>
       {isAuthenticated() && (
         <div>
+          <Link to="/boardList">전체 글</Link>
           <Link to="/myposts">내 포스트</Link>
         </div>
       )}
